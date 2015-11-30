@@ -1,0 +1,19 @@
+.navbar-default {
+  background-color: #fff;
+  font-family: "Cutive Mono";
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: #fff;
+  color: #000;
+  text-decoration: underline;
+}
+
+.navbar-default .navbar-brand {
+  color: #000;
+}
+
+body, h1, h2, h3, h4, .md-text, .page-header {
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+}
