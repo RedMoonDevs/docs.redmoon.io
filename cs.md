@@ -4,7 +4,7 @@ ClanSeeker
 ## 1. Quick Introduction 
 ### What is ClanSeeker? 
 Basically, ClanSeeker is a [WebAPI](https://en.wikipedia.org/API) that permits its users to fetch [**Clash of Clans**](https://clashofclans.com/) data from the Supercell's servers. 
-It can vary from PlayerData to ClanDetails, going through ClanSearch and _et catera_. 
+It can vary from PlayerData to ClanDetails, going through ClanSearch _et catera_. 
 
 ### In what cases can we use it?
 You can use it mainly for your clan's website. Or as a management-app system for a clan family. Who knows? 
@@ -12,7 +12,7 @@ You can use it mainly for your clan's website. Or as a management-app system for
 ## 2. Getting Started 
 ### Protocol 
 The protocol used by ClanSeeker is simple. API Calls are done with a simple GET request _(HTTP/1+)_ and the arguments are passed in the same way. 
-This is an exemple of how the protocol is designed: ```http://IP:PORT/command/?arg1=value&arg2=value```. 
+This is an example of how the protocol is designed: ```http://IP:PORT/command/?arg1=value&arg2=value```. 
 
 #### Arguments 
 The arguments have, in a certain way, types. 
