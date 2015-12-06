@@ -1,13 +1,35 @@
-# ClanSeeker
+ClanSeeker
+==========
 
+## 1. Quick Introduction 
+### What is ClanSeeker? 
+Basically, ClanSeeker is a [WebAPI](https://en.wikipedia.org/API) that permits its users to fetch [**Clash of Clans**](https://clashofclans.com/) data from the Supercell's servers. 
+It can vary from PlayerData to ClanDetails, going through ClanSearch and _et catera_. 
 
+### In what cases can we use it?
+You can use it mainly for your clan's website. Or as a management-app system for a clan family. Who knows? 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus tortor a rutrum ornare. Mauris malesuada metus eu est tincidunt sagittis. Etiam ut sem ac neque tempor condimentum. Praesent finibus est in ante vestibulum, sit amet fermentum nisl finibus. Duis eget nisi velit. Fusce faucibus, leo ut laoreet dignissim, lacus augue condimentum diam, vel malesuada dui metus sit amet ipsum. Mauris vestibulum maximus ligula, vel posuere magna vulputate sit amet. Aliquam dictum non turpis nec mollis.
+## 2. Getting Started 
+### Protocol 
+The protocol used by ClanSeeker is simple. API Calls are done with a simple GET request _(HTTP/1+)_ and the arguments are passed in the same way. 
+This is an exemple of how the protocol is designed: ```http://IP:PORT/command/?arg1=value&arg2=value```. 
 
-Curabitur eleifend, erat feugiat gravida fringilla, dui elit efficitur mi, eget maximus leo mauris vitae tellus. Ut consequat, metus in volutpat pellentesque, nibh tellus commodo ipsum, ut dapibus leo magna sed leo. Proin posuere porta sapien et dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed molestie lorem. Sed interdum tortor viverra, bibendum dolor sed, semper sem. Pellentesque elit ante, aliquam at leo non, dapibus volutpat felis. Etiam aliquam mi et blandit mattis. In justo ante, lobortis at ultrices at, accumsan ut purus. Suspendisse potenti. Phasellus nec turpis nec diam rutrum congue. Vestibulum dictum nisl nunc, id mollis leo consectetur non.
+#### Arguments 
+The arguments have, in a certain way, types. 
+Name | Possible Values | Comments 
+--- | --- | --- 
+int | From Integer.MIN_VALUE to Integer.MAX_VALUE | Not used.
+long |  From Long.MIN_VALUE to Long.MAX_VALUE | Used for IDs and such.
+String | Alpha characters, encoded in UTF-18 |
+boolean | true/false |
 
-Curabitur condimentum dui vel lacus tincidunt rhoncus. Fusce iaculis vulputate nibh, at sollicitudin neque convallis vel. Ut ullamcorper massa non turpis interdum venenatis. Cras et lorem vitae eros feugiat suscipit. Integer vel volutpat dui. Nam imperdiet sem orci, in porttitor arcu aliquet ac. Donec tempus consectetur maximus. Etiam gravida nulla non felis aliquet gravida.
+### Commands
+Name | Raw Name | Usage
+--- | --- | ---
+[Version](#!cs/version.md) | `version` | Gets the version of the running API.
+[PlayerVillage](#!cs/player_village.md) | `player_village` | Gets a player's data.
+[ClanSearch](#!cs/clan_search.md) | `clan_search` | Search a clan.
+[ClanDetails](#!cs/clan_details.md) | `clan_details` | Gets the clan's details.
 
-Quisque fringilla quam in eleifend blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sed turpis ipsum. Integer vitae sollicitudin nisl, condimentum interdum quam. Praesent urna eros, venenatis eu feugiat nec, lacinia vel odio. Pellentesque eu metus tempus, molestie leo id, pellentesque leo. Nullam posuere erat eu nunc consequat, eget egestas nulla ornare. Morbi eleifend lacus ac leo tincidunt, elementum elementum justo convallis. Vestibulum non ullamcorper magna, non dictum dolor. Integer congue pretium lorem eu condimentum. Vivamus lobortis ipsum blandit porttitor volutpat. Suspendisse ut ultricies lorem, et ultrices diam. Donec in lectus fermentum ligula vestibulum tincidunt.
-
-Nunc facilisis mauris eget nisl porttitor interdum. Aliquam id ante at elit varius tempus. Integer ligula libero, mollis vel commodo eget, rutrum quis odio. In ac nulla id magna sollicitudin mollis ut eget lorem. Sed porttitor mauris nec diam suscipit mollis. Vivamus nec tempor eros, a convallis sem. Suspendisse blandit libero eu est feugiat faucibus. Proin mattis enim neque, vitae laoreet justo dapibus id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut fermentum, dolor eu consequat vulputate, nulla nunc commodo augue, quis tincidunt massa ipsum non felis. Vestibulum et eros eu nulla elementum efficitur eget quis neque. Sed semper libero ac arcu auctor, quis interdum dui pellentesque. Vivamus id orci ut arcu maximus eleifend. Ut porta leo faucibus diam ornare accumsan. Maecenas consectetur odio eu mauris porta, ac rhoncus ante cursus. Donec auctor maximus euismod.
+## 3. License 
+Any project and/or website using this API should be reported to BananaEater (Skype: `benjamin.collord`).

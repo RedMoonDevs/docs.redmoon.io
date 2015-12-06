@@ -1,0 +1,450 @@
+PlayerVillage
+=============
+
+## Command Name
+`player_village`
+
+## Usage 
+The `player_village` command can be used to get a player's data.
+
+## Arguments
+Name | Type | Details
+--- | --- | ---
+`id` | long | PlayerID
+`slots` _(optional, set to **true** by default)_ | boolean | Shows the slots in the Avatar
+`village` _(optional, set to **true** by default)_ | boolean | Gives the Village
+`image` _(optional, set to **false** by default)_ | boolean | Gives the Pictural Representation of the Village
+`warVillage` _(optional, set to **false** by default)_ | boolean | Gives the WarVillage
+`raw` _(optional, set to **false** by default)_ | boolean | Gives the RawVillage JSON
+
+## Components
+Component | Type | Details
+--- | --- | ---
+`timeTaken` | int | Time taken to fetch the data from the Supercell server (in milliseconds).
+`tag` | String | The Request's tag (useful if you want to report the error to a developer).
+`player` | [Player](#!cs/type/player.md) | The Player's data.
+
+## Example
+```json
+{
+    "timeTaken": 155,
+    "tag": "§21",
+    "player": {
+        "avatar": {
+            "attackLoseCount": -445245272,
+            "secondsLogin": 0,
+            "achievements": [{
+                "globalID": 23000000
+            }, {
+                "globalID": 23000001
+            }, {
+                "globalID": 23000002
+            }, {
+                "globalID": 23000003
+            }, {
+                "globalID": 23000006
+            }, {
+                "globalID": 23000007
+            }, {
+                "globalID": 23000009
+            }, {
+                "globalID": 23000012
+            }, {
+                "globalID": 23000013
+            }, {
+                "globalID": 23000015
+            }, {
+                "globalID": 23000018
+            }, {
+                "globalID": 23000021
+            }, {
+                "globalID": 23000022
+            }, {
+                "globalID": 23000024
+            }, {
+                "globalID": 23000027
+            }, {
+                "globalID": 23000028
+            }, {
+                "globalID": 23000030
+            }, {
+                "globalID": 23000033
+            }, {
+                "globalID": 23000036
+            }, {
+                "globalID": 23000039
+            }, {
+                "globalID": 23000042
+            }],
+            "townHallLevel": 8,
+            "receivedTroops": 0,
+            "heroesHealth": [],
+            "resourcesCapList": [{
+                "globalID": 3000001,
+                "value": 2001000
+            }, {
+                "globalID": 3000002,
+                "value": 1251000
+            }, {
+                "globalID": 3000003,
+                "value": 0
+            }, {
+                "globalID": 3000004,
+                "value": 250000
+            }, {
+                "globalID": 3000005,
+                "value": 250000
+            }, {
+                "globalID": 3000006,
+                "value": 1000
+            }],
+            "resourcesList": [{
+                "globalID": 3000001,
+                "value": 0
+            }, {
+                "globalID": 3000002,
+                "value": 0
+            }],
+            "numberLogin": 0,
+            "spellsLevels": [],
+            "troopsCount": [{
+                "globalID": 4000000,
+                "value": 0
+            }, {
+                "globalID": 4000001,
+                "value": 0
+            }, {
+                "globalID": 4000002,
+                "value": 0
+            }, {
+                "globalID": 4000003,
+                "value": 3
+            }, {
+                "globalID": 4000004,
+                "value": 0
+            }, {
+                "globalID": 4000005,
+                "value": 0
+            }, {
+                "globalID": 4000006,
+                "value": 0
+            }],
+            "heroesState": [],
+            "tutorialProgress": [{
+                "globalID": 21000000
+            }, {
+                "globalID": 21000001
+            }, {
+                "globalID": 21000002
+            }, {
+                "globalID": 21000003
+            }, {
+                "globalID": 21000004
+            }, {
+                "globalID": 21000005
+            }, {
+                "globalID": 21000006
+            }, {
+                "globalID": 21000007
+            }, {
+                "globalID": 21000008
+            }, {
+                "globalID": 21000009
+            }, {
+                "globalID": 21000010
+            }, {
+                "globalID": 21000011
+            }],
+            "freeGems": -1818938547,
+            "clanBadge": 1526737746,
+            "currentHomeId": 1,
+            "spellsCount": [{
+                "globalID": 26000000,
+                "value": 0
+            }],
+            "clanRole": "LEADER",
+            "nameChosenByUser": true,
+            "trophies": 1162,
+            "clanId": 180389871958,
+            "defenseLoseCount": -2052037326,
+            "boughtGems": -87077299,
+            "achievementsProgress": [{
+                "globalID": 23000000,
+                "value": 10
+            }, {
+                "globalID": 23000001,
+                "value": 10
+            }, {
+                "globalID": 23000002,
+                "value": 10
+            }, {
+                "globalID": 23000003,
+                "value": 49
+            }, {
+                "globalID": 23000004,
+                "value": 49
+            }, {
+                "globalID": 23000005,
+                "value": 49
+            }, {
+                "globalID": 23000006,
+                "value": 8
+            }, {
+                "globalID": 23000007,
+                "value": 8
+            }, {
+                "globalID": 23000008,
+                "value": 8
+            }, {
+                "globalID": 23000009,
+                "value": 5
+            }, {
+                "globalID": 23000010,
+                "value": 9
+            }, {
+                "globalID": 23000011,
+                "value": 9
+            }, {
+                "globalID": 23000012,
+                "value": 1
+            }, {
+                "globalID": 23000013,
+                "value": 1
+            }, {
+                "globalID": 23000015,
+                "value": 20000
+            }, {
+                "globalID": 23000016,
+                "value": 483537
+            }, {
+                "globalID": 23000017,
+                "value": 483537
+            }, {
+                "globalID": 23000018,
+                "value": 20000
+            }, {
+                "globalID": 23000019,
+                "value": 644757
+            }, {
+                "globalID": 23000020,
+                "value": 644757
+            }, {
+                "globalID": 23000021,
+                "value": 1223
+            }, {
+                "globalID": 23000022,
+                "value": 1223
+            }, {
+                "globalID": 23000023,
+                "value": 1223
+            }, {
+                "globalID": 23000024,
+                "value": 2
+            }, {
+                "globalID": 23000025,
+                "value": 2
+            }, {
+                "globalID": 23000026,
+                "value": 2
+            }, {
+                "globalID": 23000027,
+                "value": 10
+            }, {
+                "globalID": 23000028,
+                "value": 100
+            }, {
+                "globalID": 23000029,
+                "value": 130
+            }, {
+                "globalID": 23000030,
+                "value": 10
+            }, {
+                "globalID": 23000031,
+                "value": 22
+            }, {
+                "globalID": 23000032,
+                "value": 22
+            }, {
+                "globalID": 23000033,
+                "value": 25
+            }, {
+                "globalID": 23000034,
+                "value": 72
+            }, {
+                "globalID": 23000035,
+                "value": 72
+            }, {
+                "globalID": 23000036,
+                "value": 25
+            }, {
+                "globalID": 23000037,
+                "value": 34
+            }, {
+                "globalID": 23000038,
+                "value": 34
+            }, {
+                "globalID": 23000039,
+                "value": 262
+            }, {
+                "globalID": 23000040,
+                "value": 466
+            }, {
+                "globalID": 23000041,
+                "value": 466
+            }, {
+                "globalID": 23000042,
+                "value": 100
+            }, {
+                "globalID": 23000043,
+                "value": 226
+            }, {
+                "globalID": 23000044,
+                "value": 226
+            }],
+            "defenseWinCount": 0,
+            "singlePlayerGold": [{
+                "globalID": 17000017,
+                "value": 4000
+            }, {
+                "globalID": 17000018,
+                "value": 6000
+            }, {
+                "globalID": 17000019,
+                "value": 6000
+            }, {
+                "globalID": 17000020,
+                "value": 4234
+            }],
+            "level": 45,
+            "attackWinCount": 0,
+            "league": "NONE",
+            "attackKFactor": -795436136,
+            "attackRating": -834128494,
+            "clanWar": 1,
+            "userName": "Morgil",
+            "userId": 1,
+            "clanName": "claani mestarit",
+            "troopsLevels": [{
+                "globalID": 4000000,
+                "value": 2
+            }, {
+                "globalID": 4000001,
+                "value": 2
+            }, {
+                "globalID": 4000002,
+                "value": 2
+            }, {
+                "globalID": 4000005,
+                "value": 1
+            }],
+            "gems": -1198737332,
+            "heroesLevels": [],
+            "XP": 1290,
+            "singlePlayerScore": [{
+                "globalID": 17000000,
+                "value": 3
+            }, {
+                "globalID": 17000001,
+                "value": 3
+            }, {
+                "globalID": 17000002,
+                "value": 3
+            }, {
+                "globalID": 17000003,
+                "value": 3
+            }, {
+                "globalID": 17000004,
+                "value": 3
+            }, {
+                "globalID": 17000005,
+                "value": 3
+            }, {
+                "globalID": 17000006,
+                "value": 3
+            }, {
+                "globalID": 17000007,
+                "value": 3
+            }, {
+                "globalID": 17000008,
+                "value": 3
+            }, {
+                "globalID": 17000009,
+                "value": 3
+            }, {
+                "globalID": 17000010,
+                "value": 3
+            }, {
+                "globalID": 17000011,
+                "value": 3
+            }, {
+                "globalID": 17000012,
+                "value": 2
+            }, {
+                "globalID": 17000013,
+                "value": 1
+            }, {
+                "globalID": 17000014,
+                "value": 3
+            }, {
+                "globalID": 17000016,
+                "value": 3
+            }, {
+                "globalID": 17000017,
+                "value": 1
+            }, {
+                "globalID": 17000018,
+                "value": 2
+            }, {
+                "globalID": 17000019,
+                "value": 1
+            }],
+            "givenTroops": 0,
+            "allianceTroops": [{
+                "value2": 0,
+                "value1": 0,
+                "globalID": 4000000
+            }, {
+                "value2": 0,
+                "value1": 0,
+                "globalID": 4000001
+            }, {
+                "value2": 0,
+                "value1": 0,
+                "globalID": 4000002
+            }, {
+                "value2": 0,
+                "value1": 0,
+                "globalID": 4000003
+            }, {
+                "value2": 0,
+                "value1": 0,
+                "globalID": 4000004
+            }, {
+                "value2": 0,
+                "value1": 0,
+                "globalID": 4000005
+            }, {
+                "value2": 0,
+                "value1": 0,
+                "globalID": 4000006
+            }],
+            "singlePlayerElixir": [{
+                "globalID": 17000017,
+                "value": 1667
+            }, {
+                "globalID": 17000018,
+                "value": 4694
+            }, {
+                "globalID": 17000019,
+                "value": 6000
+            }, {
+                "globalID": 17000020,
+                "value": 4195
+            }],
+            "nameChanged": 0
+        },
+        "village": {
+            "json": "{\"newShopTraps\":[6,4,2,0,0,2,1,0,0],\"cooldowns\":[],\"last_league_shuffle\":0,\"decos\":[],\"edit_mode_shown\":true,\"buildings\":[{\"lvl\":7,\"data\":1000001,\"x\":26,\"y\":17},{\"lvl\":9,\"data\":1000004,\"x\":28,\"y\":30,\"res_timer\":93609},{\"lvl\":4,\"data\":1000000,\"x\":12,\"y\":22},{\"lvl\":0,\"data\":1000015,\"x\":38,\"y\":22},{\"lvl\":1,\"data\":1000014,\"x\":18,\"y\":26},{\"lvl\":7,\"data\":1000008,\"x\":31,\"y\":13},{\"lvl\":0,\"data\":1000015,\"x\":38,\"y\":15},{\"lvl\":6,\"data\":1000002,\"x\":34,\"y\":29,\"res_timer\":30384},{\"lvl\":7,\"data\":1000003,\"x\":18,\"y\":13},{\"lvl\":9,\"data\":1000005,\"x\":33,\"y\":22},{\"lvl\":6,\"data\":1000006,\"x\":30,\"y\":9},{\"lvl\":6,\"data\":1000006,\"x\":25,\"y\":30},{\"lvl\":9,\"data\":1000004,\"x\":14,\"y\":12,\"res_timer\":93500},{\"lvl\":9,\"data\":1000004,\"x\":28,\"y\":26,\"res_timer\":93378},{\"lvl\":10,\"data\":1000002,\"x\":34,\"y\":25,\"res_timer\":128926},{\"lvl\":8,\"data\":1000002,\"x\":31,\"y\":30,\"res_timer\":72344},{\"lvl\":9,\"data\":1000005,\"x\":26,\"y\":9},{\"lvl\":7,\"data\":1000008,\"x\":25,\"y\":26},{\"lvl\":4,\"data\":1000013,\"x\":22,\"y\":17},{\"lvl\":5,\"data\":1000009,\"x\":30,\"y\":22},{\"lvl\":4,\"data\":1000010,\"x\":26,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":27,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":28,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":29,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":30,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":31,\"y\":12},{\"lvl\":5,\"data\":1000010,\"x\":26,\"y\":25},{\"lvl\":5,\"data\":1000010,\"x\":29,\"y\":23},{\"lvl\":5,\"data\":1000010,\"x\":29,\"y\":24},{\"lvl\":6,\"data\":1000010,\"x\":30,\"y\":16},{\"lvl\":5,\"data\":1000010,\"x\":24,\"y\":24},{\"lvl\":5,\"data\":1000010,\"x\":23,\"y\":24},{\"lvl\":6,\"data\":1000010,\"x\":29,\"y\":16},{\"lvl\":6,\"data\":1000010,\"x\":26,\"y\":16},{\"lvl\":5,\"data\":1000010,\"x\":21,\"y\":16},{\"lvl\":6,\"data\":1000010,\"x\":30,\"y\":18},{\"lvl\":4,\"data\":1000010,\"x\":25,\"y\":19},{\"lvl\":4,\"data\":1000010,\"x\":28,\"y\":21},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":19},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":22},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":16},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":21},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":14},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":20},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":19},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":18},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":17},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":15},{\"lvl\":4,\"data\":1000010,\"x\":20,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":19,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":18,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":32,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":25,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":33,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":21,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":23,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":36,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":23},{\"lvl\":4,\"data\":1000010,\"x\":34,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":26,\"y\":21},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":28},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":27},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":26},{\"lvl\":9,\"data\":1000003,\"x\":34,\"y\":16},{\"lvl\":2,\"data\":1000000,\"x\":34,\"y\":7},{\"lvl\":3,\"data\":1000007,\"x\":21,\"y\":25},{\"lvl\":4,\"data\":1000006,\"x\":37,\"y\":29},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":18},{\"lvl\":5,\"data\":1000010,\"x\":21,\"y\":20},{\"lvl\":5,\"data\":1000010,\"x\":24,\"y\":16},{\"lvl\":5,\"data\":1000010,\"x\":21,\"y\":18},{\"lvl\":5,\"data\":1000010,\"x\":22,\"y\":24},{\"lvl\":5,\"data\":1000010,\"x\":21,\"y\":23},{\"lvl\":4,\"data\":1000010,\"x\":35,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":25,\"y\":21},{\"lvl\":4,\"data\":1000010,\"x\":25,\"y\":20},{\"lvl\":6,\"data\":1000010,\"x\":27,\"y\":16},{\"lvl\":6,\"data\":1000010,\"x\":30,\"y\":17},{\"lvl\":5,\"data\":1000010,\"x\":27,\"y\":25},{\"lvl\":6,\"data\":1000010,\"x\":28,\"y\":16},{\"lvl\":4,\"data\":1000010,\"x\":27,\"y\":21},{\"lvl\":5,\"data\":1000010,\"x\":25,\"y\":16},{\"lvl\":5,\"data\":1000010,\"x\":23,\"y\":16},{\"lvl\":5,\"data\":1000010,\"x\":22,\"y\":16},{\"lvl\":5,\"data\":1000010,\"x\":21,\"y\":17},{\"lvl\":6,\"data\":1000009,\"x\":18,\"y\":16},{\"lvl\":5,\"data\":1000002,\"x\":16,\"y\":9,\"res_timer\":24932},{\"lvl\":10,\"data\":1000004,\"x\":34,\"y\":13,\"res_timer\":125739},{\"lvl\":4,\"data\":1000010,\"x\":25,\"y\":18},{\"lvl\":5,\"data\":1000010,\"x\":29,\"y\":21},{\"lvl\":6,\"data\":1000010,\"x\":30,\"y\":20},{\"lvl\":5,\"data\":1000010,\"x\":25,\"y\":24},{\"lvl\":4,\"data\":1000010,\"x\":25,\"y\":17},{\"lvl\":6,\"data\":1000010,\"x\":30,\"y\":19},{\"lvl\":5,\"data\":1000010,\"x\":21,\"y\":24},{\"lvl\":1,\"data\":1000012,\"x\":21,\"y\":13},{\"lvl\":2,\"data\":1000000,\"x\":17,\"y\":30},{\"lvl\":7,\"data\":1000008,\"x\":24,\"y\":13},{\"lvl\":4,\"data\":1000010,\"x\":35,\"y\":28},{\"lvl\":4,\"data\":1000010,\"x\":32,\"y\":28},{\"lvl\":4,\"data\":1000010,\"x\":36,\"y\":28},{\"lvl\":5,\"data\":1000010,\"x\":28,\"y\":25},{\"lvl\":4,\"data\":1000010,\"x\":25,\"y\":22},{\"lvl\":5,\"data\":1000010,\"x\":29,\"y\":22},{\"lvl\":5,\"data\":1000010,\"x\":25,\"y\":25},{\"lvl\":6,\"data\":1000010,\"x\":30,\"y\":21},{\"lvl\":4,\"data\":1000010,\"x\":31,\"y\":29},{\"lvl\":2,\"data\":1000011,\"x\":22,\"y\":21},{\"lvl\":4,\"data\":1000010,\"x\":12,\"y\":11},{\"lvl\":5,\"data\":1000010,\"x\":29,\"y\":25},{\"lvl\":4,\"data\":1000010,\"x\":22,\"y\":20},{\"lvl\":4,\"data\":1000010,\"x\":24,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":22,\"y\":12},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":13},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":24},{\"lvl\":4,\"data\":1000010,\"x\":25,\"y\":23},{\"lvl\":4,\"data\":1000010,\"x\":23,\"y\":20},{\"lvl\":4,\"data\":1000010,\"x\":30,\"y\":29},{\"lvl\":4,\"data\":1000010,\"x\":34,\"y\":28},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":24},{\"lvl\":4,\"data\":1000010,\"x\":37,\"y\":25},{\"lvl\":4,\"data\":1000010,\"x\":33,\"y\":28},{\"lvl\":4,\"data\":1000010,\"x\":29,\"y\":29},{\"lvl\":4,\"data\":1000010,\"x\":24,\"y\":20},{\"lvl\":9,\"data\":1000004,\"x\":14,\"y\":15,\"res_timer\":93498},{\"lvl\":4,\"data\":1000002,\"x\":23,\"y\":9,\"res_timer\":16257},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":17},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":16},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":15},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":14},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":13},{\"lvl\":3,\"data\":1000013,\"x\":31,\"y\":16},{\"lvl\":7,\"data\":1000009,\"x\":27,\"y\":13},{\"lvl\":9,\"data\":1000004,\"x\":34,\"y\":19,\"res_timer\":84624},{\"lvl\":5,\"data\":1000002,\"x\":18,\"y\":20,\"res_timer\":24947},{\"lvl\":5,\"data\":1000010,\"x\":21,\"y\":21},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":20},{\"lvl\":4,\"data\":1000010,\"x\":18,\"y\":29},{\"lvl\":5,\"data\":1000010,\"x\":21,\"y\":19},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":22},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":25},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":26},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":27},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":28},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":29},{\"lvl\":5,\"data\":1000010,\"x\":21,\"y\":22},{\"lvl\":4,\"data\":1000010,\"x\":19,\"y\":29},{\"lvl\":4,\"data\":1000010,\"x\":20,\"y\":29},{\"lvl\":4,\"data\":1000010,\"x\":21,\"y\":29},{\"lvl\":4,\"data\":1000010,\"x\":22,\"y\":29},{\"lvl\":4,\"data\":1000010,\"x\":23,\"y\":29},{\"lvl\":4,\"data\":1000010,\"x\":24,\"y\":29},{\"lvl\":4,\"data\":1000010,\"x\":25,\"y\":29},{\"lvl\":4,\"data\":1000010,\"x\":26,\"y\":29},{\"lvl\":4,\"data\":1000010,\"x\":27,\"y\":29},{\"lvl\":4,\"data\":1000010,\"x\":28,\"y\":29},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":21},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":23},{\"lvl\":4,\"data\":1000010,\"x\":17,\"y\":6},{\"lvl\":4,\"data\":1000010,\"x\":31,\"y\":28},{\"lvl\":0,\"data\":1000020,\"x\":22,\"y\":30},{\"lvl\":2,\"data\":1000011,\"x\":31,\"y\":19},{\"lvl\":3,\"data\":1000013,\"x\":26,\"y\":22},{\"lvl\":4,\"data\":1000008,\"x\":11,\"y\":27},{\"lvl\":2,\"data\":1000012,\"x\":31,\"y\":25},{\"lvl\":6,\"data\":1000009,\"x\":18,\"y\":23},{\"lvl\":3,\"data\":1000008,\"x\":27,\"y\":33}],\"obstacles\":[],\"last_news_seen\":101,\"last_league_rank\":0,\"newShopBuildings\":[4,0,6,3,6,3,4,1,5,4,175,2,2,3,1,5,0,0,0,2,1,0,1,2,1,0,1,0,0,0],\"newShopDecos\":[1,4,0,1,1,4,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1]}"
+        }
+    }
+}```
