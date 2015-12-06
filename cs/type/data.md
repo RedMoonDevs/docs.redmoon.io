@@ -11,8 +11,8 @@ Component | Type | Details
 Component | Type | Details
 --- | --- | ---
 `globalID` | int | The GlobalID of the Data
-`value1` | int | The second value of the Data
 `value1` | int | The first value of the Data
+`value2` | int | The second value of the Data
 
 ## DataReference
 Component | Type | Details
