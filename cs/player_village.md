@@ -11,6 +11,7 @@ The `player_village` command can be used to get a player's data.
 Name | Type | Details
 --- | --- | ---
 `id` | long | PlayerID
+`home` _(optional, set to **true** by default)_ | long | CurrentHomeID
 `slots` _(optional, set to **true** by default)_ | boolean | Shows the slots in the Avatar
 `village` _(optional, set to **true** by default)_ | boolean | Gives the Village
 `image` _(optional, set to **false** by default)_ | boolean | Gives the Pictural Representation of the Village
