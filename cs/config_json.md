@@ -2,7 +2,7 @@
 
 ## Example config
 
-```
+```json
 {
   "server": {
     "path": "/",
@@ -28,7 +28,7 @@
 
 ### `server` block
 
-```
+```json
 "server": {
   "path": "/",
   "port": 8338
@@ -41,7 +41,7 @@
 
 ### `game` block
 
-```
+```json
 "game": {
   "clientsWorking": 2,
   "clients": [
@@ -53,12 +53,12 @@
     "version": "7.200.22",
     "sha": "b07b1997df077c85b4863d965aa9f7eb20a0831c"
   },
-  ```
+```
 
 `clientsWorking`: How many clients should be actively working. This should be set to how many clients you want actively running for calls, with the rest acting as backups Set this to a **minimum** of 1. We recommend setting this to 1 or 2 less than the amount of client accounts you have to ensure you have a backup account ready.
 
 `clients`: Configuration for client accounts, to login to the Clash of Clans servers. Clients is set in the following manner:
-```
+```json
 "clients": [
   {"id": USER-ID,
   "token": "USER-TOKEN",
@@ -73,9 +73,11 @@
 ],
 ```
   You can add more {"id"...} brackets, as many as you want for the amounts of accounts you have credentials to.
-* `id`: <!-- ALEX WRITE THESE -->
-* `token`
-* `name`
+
+* `id`: This is the ID used by ClashOfClans to connect and login to Supercell's servers.
+* `token`: This is the token used by ClashOfClans to connect and login to Supercell's servers.
+* `name`: This is the name you can give your client. It will be displayed in the console and logs.
+* `enabled` _(optional, set to **true** by default)_: If you want this account to be disabled, set this option to **false**.
 
 `gameVersion`: Game configuration. Replace `version` and `sha` with the current Clash of Clans version information.
 
