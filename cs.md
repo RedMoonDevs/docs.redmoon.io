@@ -31,7 +31,7 @@ Name | Raw Name | Usage
 [ClanSearch](#!cs/clan_search.md) | `clan_search` | Search a clan.
 [ClanDetails](#!cs/clan_details.md) | `clan_details` | Gets the clan's details.
 
-## ClanSeeker API servers
+## 3. ClanSeeker API servers
 
 ClanSeeker is available for download to run on your own servers. Here is a list of trusted API servers if you don't want to host your own:
 
@@ -53,5 +53,5 @@ Relevant documentation:
 
   * [Config.json](cs/config_json.md)
 
-## 3. License
+## 4. License
 Any project and/or website using this API should be reported to BananaEater (Skype: `benjamin.collord`).
