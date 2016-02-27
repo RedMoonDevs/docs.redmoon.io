@@ -15,7 +15,8 @@ The protocol used by ClanSeeker is simple. API Calls are done with a simple GET 
 This is an example of how the protocol is designed: ```http://api.clanseeker.co/command/?arg1=value&arg2=value```.
 
 #### Arguments
-The arguments have, in a certain way, types.
+The arguments have, in a certain way, types.  
+
 Name | Possible Values | Comments
 --- | --- | ---
 int | From Integer.MIN_VALUE to Integer.MAX_VALUE | Not used.
